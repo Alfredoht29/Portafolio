@@ -14,7 +14,7 @@
         <div class="card text-white bg-dark h-25" data-toggle="modal"
           data-target="#mdl<?php echo $row['ID'];?>">
           <img class="card-img-top" alt=""
-          src="/galleryCrud/imagesRecop/<?php
+          src="/GALERIA/imagenes/<?php
           echo $row['IMAGE'];?>">
           <div class='p-3'>
             <h5><?php echo $row['TITLE'];?></h5><br>

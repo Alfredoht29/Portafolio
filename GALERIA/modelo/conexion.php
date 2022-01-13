@@ -15,7 +15,7 @@ class Conexion {
     $this->host= 'localhost';
     $this->Huser= 'root';
     $this->Hpass= 'S1stemas21';
-    $this->db= 'GALERIA';
+    $this->db= 'galeria';
     $this->charset= 'utf8';
   }
    

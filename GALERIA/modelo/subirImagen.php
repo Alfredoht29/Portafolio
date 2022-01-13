@@ -8,8 +8,9 @@ class ImageVal {
     $type= $_FILES['imagePost']['type'];  
     $size= $_FILES['imagePost']['size'];
     //Discoduro/xampp/htdocs/galleryCrud/imagesRecop/
-    $fold= '/galleryCrud/imagesRecop/';
-  
+    //$fold= '/galeria/imagesRecop/';
+    $fold='/GALERIA/imagenes/';
+    
     if($size<=3400000){
     
       if($type=='image/jpeg' || $type=='image/jpg' || 
@@ -17,8 +18,7 @@ class ImageVal {
        
         $destino= $_SERVER['DOCUMENT_ROOT']. $fold;
     
-        move_uploaded_file($_FILES['imagePost']['tmp_name'],                            
-                         $destino. $name);
+        move_uploaded_file($_FILES['imagePost']['tmp_name'],$destino. $name);
         return $name;
         
       } else {
