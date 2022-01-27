@@ -14,7 +14,7 @@ class Conexion {
   public function __construct() {
     $this->host= 'localhost';
     $this->Huser= 'root';
-    $this->Hpass= 'S1stemas21';
+    $this->Hpass= '';
     $this->db= 'galeria';
     $this->charset= 'utf8';
   }
